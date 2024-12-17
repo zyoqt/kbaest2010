@@ -1,0 +1,146 @@
+/* Global styles with a clean and modern aesthetic */
+body {
+  font-family: 'Montserrat', sans-serif;  /* Apply Montserrat Light for body text */
+  background-color: #2d2d2d;  /* Dark gray background */
+  background-image: url("https://scontent.fmnl8-1.fna.fbcdn.net/v/t39.30808-6/453502415_8758492344167883_7320148157000651122_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeGAKQ2wcqkKVkYahKm5J-7NxZznJ6RLQYnFnOcnpEtBiVh5bh5A6Fqyd8GadL4k6ZHBI32ORjuebg6WFRshgv6r&_nc_ohc=4bVYWTTOFDIQ7kNvgGiKGAt&_nc_zt=23&_nc_ht=scontent.fmnl8-1.fna&_nc_gid=ArKXxoI3t2ZcgVMfI9uq-Uq&oh=00_AYBqEot681rlx_9cuGojabWczF-W50bbMAAg0lGsOn9eXw&oe=6767936D"); /* Grainy texture */
+  background-size: cover;
+  background-position: center;
+  color: #e0e0e0;  /* Light gray text for a modern feel */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+/* Centered page container with a clean card-style layout */
+.container {
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px); /* Smooth blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border to define the container */
+}
+
+/* Header section with modern typography */
+header {
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent header */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  font-family: 'Helvetica Neue', sans-serif;  /* Apply Helvetica Neue Light for header */
+  font-weight: 300;  /* Light weight */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Text shadow for depth */
+}
+
+/* Style for headings */
+h1, h2 {
+  color: inherit;  /* Use inherited color for consistency */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  font-family: 'Helvetica Neue', sans-serif;  /* Apply Helvetica Neue Light */
+  font-weight: 300;  /* Light weight */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);  /* Text shadow effect for more elegance */
+}
+
+/* Button styling with smooth hover transitions */
+button {
+  background-color: #4e73df;  /* Soft blue color for the button */
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 50px;  /* Rounded button edges */
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;  /* Apply Montserrat Light for button */
+  font-weight: 300;  /* Light weight */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #375aeb;  /* Slightly darker blue on hover */
+  transform: translateY(-2px);  /* Button moves up on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Subtle shadow on hover */
+}
+
+/* Textarea with smooth resizing and modern styling */
+textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 160px;
+  padding: 16px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;  /* Apply Montserrat Light for textarea */
+  font-weight: 300;  /* Light weight */
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  background-color: #333;  /* Dark background for textarea */
+  color: #fff;  /* Light text inside the textarea */
+  margin-bottom: 20px;
+  resize: both;  /* Allow both horizontal and vertical resizing */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #4e73df;  /* Blue border on focus */
+  background-color: #444;  /* Slightly lighter background when focused */
+}
+
+/* Post List with soft hover effects */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.1);  /* Semi-transparent background for posts */
+  color: #ddd;  /* Soft text color */
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;  /* Apply Montserrat Light for posts */
+  font-size: 1.1rem;
+}
+
+li:hover {
+  transform: translateY(-4px);  /* Slight hover effect to raise the post */
+  background-color: rgba(255, 255, 255, 0.15);  /* Darken background on hover */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    padding: 12px 24px;
+  }
+
+  textarea {
+    padding: 14px;
+  }
+}
